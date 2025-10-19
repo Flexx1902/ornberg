@@ -1,7 +1,7 @@
 ﻿init python:
     renpy.music.register_channel("bgs", "sfx", loop = True)
 
-# Игра начинается здесь:
+# Точка входа
 label start:
     jump station
     

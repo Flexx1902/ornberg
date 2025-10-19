@@ -4,6 +4,14 @@
     ],
     "files.exclude": {
         "**/.git": true,
-        "**/*.rpyc": true
+        "**/*.rpyc": true,
+        "**/errors.txt": true,
+        "**/files.txt": true,
+        "**/image_cache.txt": true,
+        "**/log.txt": true,
+        "**/save_dump.txt": true,
+        "**/traceback.txt": true,
+        "game/saves": true,
+        "game/cache": true
     }
 }
