@@ -2,9 +2,12 @@ transform left_inset:
     xalign 0.1   # от левого края
     yalign 1.0    # по нижнему краю 
 
-transform right_inset:
-    xalign 1.1   # от прав края
-    yalign 1.0    # по нижнему краю
+transform right:
+    xalign 1.0   # от прав края
+    yalign -1.0    # по нижнему краю
+
+transform normal_size:
+    zoom 0.6
 
 transform half_size:
     zoom 0.5    # 50% от оригинала
