@@ -1,0 +1,9 @@
+{
+    "python.analysis.ignore": [
+        "*"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/*.rpyc": true
+    }
+}
