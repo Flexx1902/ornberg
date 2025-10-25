@@ -364,19 +364,11 @@ screen main_menu():
 
     ## Оператор use включает отображение другого экрана в данном. Актуальное
     ## содержание главного меню находится на экране навигации.
-    use navigation
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+    imagebutton auto "gui/mm_start_%s.png" xpos 228 ypos 110 focus_mask True action Start() hovered [ Play("sound", "audio/sound/door1.mp3") ]
+    imagebutton auto "gui/mm_settings_%s.png" xpos 923 ypos 282 focus_mask True action ShowMenu("preferences") hovered [ Play("sound", "audio/sound/metal_door1.mp3") ]
+    imagebutton auto "gui/mm_load_%s.png" xpos 1091 ypos 708 focus_mask True action ShowMenu("load") hovered [ Play("sound", "audio/sound/tv_switch1.mp3") ]
+    imagebutton auto "gui/mm_quit_%s.png" xpos 1628 ypos 0 focus_mask True action Quit(confirm=not main_menu) hovered [ Play("sound", "audio/sound/glass_movement1.mp3") ]
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -384,11 +376,11 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
+# style main_menu_frame:
+#     xsize 420
+#     yfill True
+#
+#     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
