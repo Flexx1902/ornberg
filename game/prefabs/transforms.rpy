@@ -1,24 +1,29 @@
-transform left_inset:
-    xalign 0.1   # от левого края
-    yalign 1.0    # по нижнему краю 
-
-transform right:
-    xalign 1.0   # от прав края
-    yalign -1.0    # по нижнему краю
-
-transform normal_size:
+transform right_stay:
     zoom 0.6
+    right
+    ypos 1.25
 
 transform half_size:
-    zoom 0.5    # 50% от оригинала
+    zoom 0.5
 
-transform sit_position:
+transform right_sit:
+    zoom 0.5
+    right
     xalign 0.82
-    yalign 2.0
+    yalign 2.3
 
 transform train_sway:
-    zoom 1.003
-    linear 0.3 yoffset -4 xoffset -4
-    linear 0.3 yoffset 0 xoffset 0
-    linear 0.3 yoffset -2 xoffset -4
+    truecenter
+    linear 0.3 xoffset 0 yoffset 2
+    linear 0.3 xoffset 2 yoffset -2
+    linear 0.3 xoffset 0 yoffset 2
+    linear 0.3 xoffset -2 yoffset -2 
     repeat
+
+transform shake:
+    truecenter
+    linear 0.05 xoffset -20 yoffset -20 
+    linear 0.05 xoffset 20 yoffset 20 
+    linear 0.05 xoffset -20 yoffset 20 
+    linear 0.05 xoffset 0 yoffset 0 
+    reset

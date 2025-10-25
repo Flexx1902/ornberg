@@ -12,5 +12,9 @@
         "**/traceback.txt": true,
         "game/saves": true,
         "game/cache": true
-    }
+    },
+    "cSpell.words": [
+        "renpy",
+        "zorder"
+    ]
 }

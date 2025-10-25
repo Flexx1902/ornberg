@@ -1,4 +1,4 @@
-image black = "images/bgs/black.png"
+image black = Solid("#000000")
 
 image station1 = "images/bgs/station1.png"
 
