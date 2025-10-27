@@ -31,10 +31,11 @@ label intro_strange_things:
     show EgorSit as Egor at train_sway, right_sit
     with dissolve
 
-    stop music
-    play music "music/jass.mp3" volume 0.2
+    stop music fadeout 5.0
 
     anon "Наверное, сквозняк. Старые вагоны. Бывает."
+
+    play music "music/jass.mp3" fadein 1.5 volume 0.3
 
     mind "Сквозняк... ага. Тогда почему сердце до сих пор стучит?"
     "Я откинулся, пытаясь расслабиться. Но воздух в купе всё ещё казался плотным, как перед грозой."

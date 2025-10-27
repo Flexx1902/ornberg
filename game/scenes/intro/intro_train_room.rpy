@@ -2,7 +2,7 @@ label intro_train_room:
     scene train_room at train_sway
 
     play bgs "audio/bgs/train_ambient.mp3" volume 0.08
-    play music "music/jass.mp3" volume 0.2
+    play music "music/jass.mp3" volume 0.3
 
     "Купе было почти пустым. Среди мягких сидений сидел один человек — тихо, с закрытыми глазами."
 

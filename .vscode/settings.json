@@ -1,9 +1,7 @@
 {
-    "python.analysis.ignore": [
-        "*"
-    ],
     "files.exclude": {
         "**/*.rpyc": true,
+        "**/*.bak": true,
         "**/errors.txt": true,
         "**/files.txt": true,
         "**/image_cache.txt": true,
@@ -11,7 +9,12 @@
         "**/save_dump.txt": true,
         "**/traceback.txt": true,
         "game/saves": true,
-        "game/cache": true
+        "game/cache": true,
+        "game/libs": true,
+        "game/tl": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
     },
     "cSpell.words": [
         "renpy",
